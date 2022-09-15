@@ -1,0 +1,3 @@
+[submodule "ZLib/Stages/0_ZLib_Base/zlib-C-To-CSharp-Base"]
+	path = ZLib/Stages/0_ZLib_Base/zlib-C-To-CSharp-Base
+	url = https://github.com/Nanook/zlib-C-To-CSharp-Base.git
