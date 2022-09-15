@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <OutputType>Library</OutputType>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Adler32.cs" />
+    <Compile Remove="Compress.cs" />
+    <Compile Remove="Crc32.cs" />
+    <Compile Remove="Deflate.cs" />
+    <Compile Remove="Trees.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\AssemblyInfo.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\ChecksumImpl.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\CircularBuffer.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\CodecBase.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\Deflater.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\DotZLib.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\GZipStream.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\Inflater.cs" />
+    <Compile Remove="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\UnitTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib.sln" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\AssemblyInfo.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\ChecksumImpl.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\CircularBuffer.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\CodecBase.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\Deflater.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\DotZLib.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\DotZLib.csproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\GZipStream.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\Inflater.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\dotzlib\DotZLib\UnitTests.cs" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc10\miniunz.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc10\minizip.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc10\testzlib.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc10\testzlibdll.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc10\zlibstat.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc10\zlibvc.sln" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc10\zlibvc.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc11\miniunz.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc11\minizip.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc11\testzlib.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc11\testzlibdll.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc11\zlibstat.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc11\zlibvc.sln" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc11\zlibvc.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc12\miniunz.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc12\minizip.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc12\testzlib.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc12\testzlibdll.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc12\zlibstat.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc12\zlibvc.sln" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc12\zlibvc.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc14\miniunz.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc14\minizip.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc14\testzlib.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc14\testzlibdll.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc14\zlibstat.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc14\zlibvc.sln" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc14\zlibvc.vcxproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc9\miniunz.vcproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc9\minizip.vcproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc9\testzlib.vcproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc9\testzlibdll.vcproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc9\zlibstat.vcproj" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc9\zlibvc.sln" />
+    <None Include="Stages\0_ZLib_Base\zlib-C-To-CSharp-Base\contrib\vstudio\vc9\zlibvc.vcproj" />
+  </ItemGroup>
+
+</Project>
